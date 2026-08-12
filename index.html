@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AutoStyle Car Accessories | Interior, Exterior & Car Care</title>
+
+<meta
+    name="description"
+    content="Shop car accessories including seat covers, floor mats, car chargers, cleaning products, mobile holders and exterior accessories."
+>
+
+<style>
+:root{
+    --red:#e23a3a;
+    --red-dark:#b92a2a;
+    --black:#14171c;
+    --black-soft:#22272e;
+    --silver:#eef1f4;
+    --white:#ffffff;
+    --light:#f7f8fa;
+    --text:#2c3540;
+    --muted:#737e89;
+    --border:#dfe4e9;
+    --yellow:#f2b438;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+.container{
+    width:min(1120px,calc(100% - 32px));
+    margin:auto;
+}
+
+.btn{
+    min-height:46px;
+    padding:0 22px;
+    border:0;
+    border-radius:8px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.btn-primary{
+    background:var(--red);
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:var(--red-dark);
+    transform:translateY(-2px);
+}
+
+.btn-dark{
+    background:var(--black);
+    color:#fff;
+}
+
+.btn-light{
+    background:#fff;
+    color:var(--black);
+    border:1px solid var(--border);
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:#0d0f13;
+    color:#c8cdd3;
+    padding:8px 0;
+    font-size:12px;
+}
+
+.topbar-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.topbar strong{
+    color:#fff;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.navbar{
+    min-height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:var(--black);
+    font-size:23px;
+    font-weight:800;
+}
+
+.logo-icon{
+    width:42px;
+    height:42px;
+    border-radius:11px;
+    background:#ffeaea;
+    display:grid;
+    place-items:center;
+    font-size:23px;
+}
+
+.logo span{
+    color:var(--red);
+}
+
+.menu{
+    display:flex;
+    gap:23px;
+    list-style:none;
+}
+
+.menu a{
+    color:#55606b;
+    font-size:14px;
+    font-weight:600;
+}
+
+.menu a:hover{
+    color:var(--red);
+}
+
+/* HERO */
+
+.hero{
+    padding:72px 0 82px;
+    background:
+        radial-gradient(circle at 82% 20%,rgba(226,58,58,.15),transparent 28%),
+        linear-gradient(135deg,#f4f6f8,#fff4f4);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:55px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 13px;
+    border-radius:30px;
+    background:#ffe7e7;
+    color:var(--red-dark);
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.badge-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--red);
+}
+
+.hero h1{
+    color:var(--black);
+    font-size:56px;
+    line-height:1.08;
+    letter-spacing:-2px;
+    margin-bottom:18px;
+}
+
+.hero h1 span{
+    color:var(--red);
+}
+
+.hero p{
+    max-width:600px;
+    color:var(--muted);
+    font-size:17px;
+    margin-bottom:27px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.hero-points{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:29px;
+    color:#616b76;
+    font-size:13px;
+}
+
+.hero-points strong{
+    color:var(--red);
+}
+
+.car-visual{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:25px;
+    box-shadow:0 22px 50px rgba(30,40,50,.12);
+}
+
+.car-card{
+    min-height:325px;
+    border-radius:17px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(145deg,#edf1f5,#ffe8e8);
+}
+
+.main-icon{
+    font-size:120px;
+}
+
+.float-item{
+    position:absolute;
+    width:64px;
+    height:64px;
+    border-radius:17px;
+    background:#fff;
+    display:grid;
+    place-items:center;
+    font-size:31px;
+    box-shadow:0 10px 26px rgba(35,45,55,.13);
+}
+
+.item-one{top:24px;left:25px;}
+.item-two{top:32px;right:30px;}
+.item-three{bottom:27px;left:48px;}
+.item-four{bottom:25px;right:38px;}
+
+/* FEATURES */
+
+.features{
+    padding:24px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:19px;
+    border-right:1px solid var(--border);
+}
+
+.feature:last-child{
+    border-right:0;
+}
+
+.feature-icon{
+    font-size:27px;
+}
+
+.feature h3{
+    color:var(--black);
+    font-size:13px;
+    margin-bottom:2px;
+}
+
+.feature p{
+    color:var(--muted);
+    font-size:11px;
+}
+
+/* COMMON */
+
+.section{
+    padding:72px 0;
+}
+
+.section-light{
+    background:var(--light);
+}
+
+.section-heading{
+    max-width:660px;
+    margin:0 auto 38px;
+    text-align:center;
+}
+
+.section-heading span{
+    color:var(--red);
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    font-size:11px;
+    font-weight:800;
+}
+
+.section-heading h2{
+    color:var(--black);
+    font-size:38px;
+    line-height:1.2;
+    margin:8px 0 10px;
+}
+
+.section-heading p{
+    color:var(--muted);
+}
+
+/* CATEGORIES */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.category-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:25px 20px;
+    text-align:center;
+    transition:.25s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 34px rgba(30,40,50,.08);
+}
+
+.category-icon{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:#fff0f0;
+    margin:0 auto 14px;
+    display:grid;
+    place-items:center;
+    font-size:35px;
+}
+
+.category-card h3{
+    color:var(--black);
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.category-card p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* PRODUCTS */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.product-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.product-image{
+    height:165px;
+    display:grid;
+    place-items:center;
+    position:relative;
+    background:linear-gradient(145deg,#eff2f5,#ffecec);
+    font-size:68px;
+}
+
+.product-label{
+    position:absolute;
+    top:12px;
+    left:12px;
+    padding:5px 9px;
+    border-radius:20px;
+    background:var(--red);
+    color:#fff;
+    font-size:9px;
+    font-weight:800;
+}
+
+.product-content{
+    padding:17px;
+}
+
+.product-content small{
+    color:var(--red);
+    font-weight:700;
+}
+
+.product-content h3{
+    color:var(--black);
+    font-size:16px;
+    margin:5px 0;
+}
+
+.product-content p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+.product-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:14px;
+}
+
+.price strong{
+    color:var(--black);
+    font-size:18px;
+}
+
+.price del{
+    color:#a2a9b0;
+    font-size:11px;
+    margin-left:4px;
+}
+
+.small-btn{
+    min-height:35px;
+    padding:0 11px;
+    border-radius:7px;
+    background:var(--black);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+}
+
+/* CTA */
+
+.cta{
+    padding:34px 0 72px;
+}
+
+.cta-box{
+    background:linear-gradient(135deg,var(--red),var(--red-dark));
+    color:#fff;
+    border-radius:18px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:35px;
+}
+
+.cta-box h2{
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:6px;
+}
+
+.cta-box p{
+    color:#ffe2e2;
+}
+
+/* CONTACT */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:42px;
+}
+
+.contact-info{
+    background:var(--black);
+    color:#fff;
+    border-radius:16px;
+    padding:34px;
+}
+
+.contact-info h2{
+    font-size:29px;
+    line-height:1.25;
+    margin-bottom:12px;
+}
+
+.contact-info > p{
+    color:#c9cfd5;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.info-row{
+    padding:13px 0;
+    border-top:1px solid rgba(255,255,255,.13);
+}
+
+.info-row strong{
+    display:block;
+    font-size:11px;
+    margin-bottom:4px;
+}
+
+.info-row span{
+    color:#c8ced4;
+    font-size:13px;
+}
+
+.enquiry-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    outline:none;
+    background:#fff;
+}
+
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus{
+    border-color:var(--red);
+    box-shadow:0 0 0 3px rgba(226,58,58,.1);
+}
+
+.enquiry-form textarea{
+    min-height:105px;
+    resize:vertical;
+    grid-column:span 2;
+}
+
+.enquiry-form button,
+.form-note{
+    grid-column:span 2;
+}
+
+.form-note{
+    color:#7d8790;
+    font-size:10px;
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0d0f13;
+    color:#fff;
+    padding:48px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.6fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-logo{
+    font-size:23px;
+    font-weight:800;
+    margin-bottom:11px;
+}
+
+.footer-logo span{
+    color:var(--red);
+}
+
+footer p,
+footer a{
+    color:#9fa6ae;
+    font-size:12px;
+    line-height:1.8;
+}
+
+footer h4{
+    margin-bottom:12px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:7px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    border-top:1px solid #292d33;
+    margin-top:30px;
+    padding-top:18px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#747d86;
+    font-size:11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .menu{
+        display:none;
+    }
+
+    .hero-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features-grid,
+    .category-grid,
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:min(100% - 22px,1120px);
+    }
+
+    .topbar-inner{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .topbar-inner span:last-child{
+        display:none;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    .navbar .btn{
+        padding:0 13px;
+        font-size:11px;
+    }
+
+    .hero{
+        padding:55px 0;
+    }
+
+    .hero h1{
+        font-size:41px;
+        letter-spacing:-1.2px;
+    }
+
+    .car-card{
+        min-height:270px;
+    }
+
+    .main-icon{
+        font-size:90px;
+    }
+
+    .features-grid,
+    .category-grid,
+    .product-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature{
+        justify-content:flex-start;
+        border-right:0;
+        border-bottom:1px solid var(--border);
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-heading h2{
+        font-size:31px;
+    }
+
+    .cta-box{
+        padding:29px 22px;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .cta-box h2{
+        font-size:27px;
+    }
+
+    .enquiry-form{
+        grid-template-columns:1fr;
+    }
+
+    .enquiry-form textarea,
+    .enquiry-form button,
+    .form-note{
+        grid-column:auto;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    <div class="container topbar-inner">
+        <span>Interior · Exterior · Car care · Electronics · Utility accessories</span>
+        <span>Call / WhatsApp: <strong>+91 98765 43210</strong></span>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-icon">🚘</div>
+            Auto<span>Style</span>
+        </a>
+
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Popular Products</a></li>
+            <li><a href="#enquiry">Enquiry</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#products" class="btn btn-primary">
+            Shop Accessories
+        </a>
+
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Upgrade comfort, convenience and style
+            </div>
+
+            <h1>
+                Smart accessories for a <span>better drive.</span>
+            </h1>
+
+            <p>
+                Explore seat covers, floor mats, mobile holders,
+                chargers, car-care products and exterior accessories
+                for different car models and everyday driving needs.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn btn-primary">
+                    Explore Products
+                </a>
+
+                <a href="#enquiry" class="btn btn-light">
+                    Check Compatibility
+                </a>
+
+            </div>
+
+            <div class="hero-points">
+                <div><strong>✓</strong> Interior & exterior products</div>
+                <div><strong>✓</strong> Multiple car models</div>
+                <div><strong>✓</strong> Fitting support available</div>
+            </div>
+
+        </div>
+
+        <div class="car-visual">
+
+            <div class="car-card">
+
+                <div class="main-icon">🚗</div>
+
+                <div class="float-item item-one">📱</div>
+                <div class="float-item item-two">🔌</div>
+                <div class="float-item item-three">🧽</div>
+                <div class="float-item item-four">💺</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="container features-grid">
+
+        <div class="feature">
+            <div class="feature-icon">🚘</div>
+            <div>
+                <h3>Model Compatibility</h3>
+                <p>Check fitment before purchase</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🔧</div>
+            <div>
+                <h3>Fitting Support</h3>
+                <p>Available for selected products</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🧽</div>
+            <div>
+                <h3>Car Care Range</h3>
+                <p>Cleaning and maintenance products</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">☎️</div>
+            <div>
+                <h3>Easy Enquiry</h3>
+                <p>Check stock and pricing quickly</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CATEGORIES -->
+
+<section class="section section-light" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Accessory categories</span>
+
+            <h2>
+                Everything your car needs in one place.
+            </h2>
+
+            <p>
+                Browse useful products for comfort,
+                protection, connectivity and car care.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <article class="category-card">
+
+                <div class="category-icon">💺</div>
+
+                <h3>Interior Accessories</h3>
+
+                <p>
+                    Seat covers, floor mats, organizers and comfort accessories.
+                </p>
+
+            </article>
+
+            <article class="category-card">
+
+                <div class="category-icon">📱</div>
+
+                <h3>Car Electronics</h3>
+
+                <p>
+                    Mobile holders, chargers and selected electronic accessories.
+                </p>
+
+            </article>
+
+            <article class="category-card">
+
+                <div class="category-icon">✨</div>
+
+                <h3>Exterior Accessories</h3>
+
+                <p>
+                    Styling and protection products for the exterior of your car.
+                </p>
+
+            </article>
+
+            <article class="category-card">
+
+                <div class="category-icon">🧽</div>
+
+                <h3>Car Care</h3>
+
+                <p>
+                    Cleaning cloths, shampoos, polish and detailing essentials.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Popular accessories</span>
+
+            <h2>
+                Useful upgrades for everyday driving.
+            </h2>
+
+            <p>
+                Sample products and prices are shown below.
+                Replace them with your actual store inventory before publishing.
+            </p>
+
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <span class="product-label">POPULAR</span>
+                    💺
+                </div>
+
+                <div class="product-content">
+
+                    <small>Interior</small>
+
+                    <h3>Premium Seat Cover Set</h3>
+
+                    <p>
+                        Stylish seat-cover option for selected vehicle models.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            <strong>₹3,499</strong>
+                            <del>₹4,299</del>
+                        </div>
+
+                        <a href="#enquiry" class="small-btn">
+                            Enquire
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <span class="product-label">NEW</span>
+                    📱
+                </div>
+
+                <div class="product-content">
+
+                    <small>Utility</small>
+
+                    <h3>Dashboard Mobile Holder</h3>
+
+                    <p>
+                        Adjustable holder for compatible smartphones.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            <strong>₹599</strong>
+                        </div>
+
+                        <a href="#enquiry" class="small-btn">
+                            Enquire
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    🔌
+                </div>
+
+                <div class="product-content">
+
+                    <small>Electronics</small>
+
+                    <h3>Dual USB Car Charger</h3>
+
+                    <p>
+                        Compact charging accessory for compatible vehicle sockets.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            <strong>₹449</strong>
+                        </div>
+
+                        <a href="#enquiry" class="small-btn">
+                            Enquire
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <div class="product-image">
+                    <span class="product-label">VALUE</span>
+                    🧽
+                </div>
+
+                <div class="product-content">
+
+                    <small>Car Care</small>
+
+                    <h3>Car Cleaning Kit</h3>
+
+                    <p>
+                        Basic cleaning essentials for routine car-care use.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+                            <strong>₹799</strong>
+                            <del>₹999</del>
+                        </div>
+
+                        <a href="#enquiry" class="small-btn">
+                            Enquire
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div>
+
+                <h2>
+                    Not sure which accessory fits your car?
+                </h2>
+
+                <p>
+                    Share your car make, model and year
+                    to check compatible accessories and current availability.
+                </p>
+
+            </div>
+
+            <a href="#enquiry" class="btn btn-light">
+                Check Compatibility
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ENQUIRY -->
+
+<section class="section section-light" id="enquiry">
+
+    <div class="container contact-grid">
+
+        <div class="contact-info" id="contact">
+
+            <h2>
+                Request product details and pricing.
+            </h2>
+
+            <p>
+                Submit your vehicle and accessory requirement.
+                Our store team will contact you regarding compatibility,
+                stock, pricing and fitting options.
+            </p>
+
+            <div class="info-row">
+                <strong>Call / WhatsApp</strong>
+                <span>+91 98765 43210</span>
+            </div>
+
+            <div class="info-row">
+                <strong>Email</strong>
+                <span>sales@autostyle.in</span>
+            </div>
+
+            <div class="info-row">
+                <strong>Store Address</strong>
+                <span>25 Auto Market Road, Your City, India</span>
+            </div>
+
+            <div class="info-row">
+                <strong>Store Hours</strong>
+                <span>Monday – Sunday: 9:30 AM – 8:30 PM</span>
+            </div>
+
+            <div class="info-row">
+                <strong>Compatibility Information</strong>
+                <span>
+                    Confirm vehicle model, dimensions and electrical compatibility
+                    before purchasing or installing accessories.
+                </span>
+            </div>
+
+        </div>
+
+        <form class="enquiry-form" action="#enquiry" method="post">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Phone / WhatsApp"
+                required>
+
+            <input
+                type="text"
+                name="car_model"
+                placeholder="Car Make & Model"
+                required>
+
+            <input
+                type="number"
+                name="car_year"
+                min="1990"
+                max="2030"
+                placeholder="Model Year">
+
+            <select name="category" required>
+                <option value="">Accessory Category</option>
+                <option value="interior">Interior Accessories</option>
+                <option value="electronics">Car Electronics</option>
+                <option value="exterior">Exterior Accessories</option>
+                <option value="car-care">Car Care Products</option>
+                <option value="multiple">Multiple Accessories</option>
+            </select>
+
+            <select name="requirement">
+                <option value="">Requirement</option>
+                <option value="product-only">Product Only</option>
+                <option value="product-fitting">Product + Fitting</option>
+                <option value="price-check">Price Check</option>
+                <option value="recommendation">Need Recommendation</option>
+            </select>
+
+            <input
+                type="text"
+                name="city"
+                placeholder="City / Locality"
+                required>
+
+            <select name="budget">
+                <option value="">Approximate Budget</option>
+                <option value="below-1000">Below ₹1,000</option>
+                <option value="1000-5000">₹1,000 – ₹5,000</option>
+                <option value="5000-15000">₹5,000 – ₹15,000</option>
+                <option value="15000-plus">₹15,000+</option>
+            </select>
+
+            <textarea
+                name="message"
+                placeholder="Mention the accessory, preferred style, brand, color or other requirements"></textarea>
+
+            <div class="form-note">
+                Product availability, prices and compatibility may vary.
+                Final fitment should be confirmed for your exact vehicle before purchase or installation.
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Submit Car Accessory Enquiry
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+                    Auto<span>Style</span>
+                </div>
+
+                <p>
+                    Interior accessories, car electronics,
+                    exterior styling and car-care products
+                    for different vehicle models.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Categories</h4>
+
+                <ul>
+                    <li><a href="#categories">Interior Accessories</a></li>
+                    <li><a href="#categories">Car Electronics</a></li>
+                    <li><a href="#categories">Exterior Accessories</a></li>
+                    <li><a href="#categories">Car Care</a></li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Popular Products</a></li>
+                    <li><a href="#enquiry">Product Enquiry</a></li>
+                    <li><a href="#contact">Contact Details</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 AutoStyle Car Accessories. All rights reserved.
+            </span>
+
+            <span>
+                Product compatibility, stock and pricing are confirmed before purchase.
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
